@@ -1,0 +1,84 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fcf8f8;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.panel-estudiante {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 100%;
+    background-image: url('https://previews.123rf.com/images/cherezoff/cherezoff1406/cherezoff140600309/28984972-las-computadoras-port%C3%A1tiles-con-la-tierra-contra-mundiales-conexiones-mapa-de-fondo-y-red.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+header {
+    background: linear-gradient(to right, #484848, #9b9b9b, #484848);
+    color: #fcf8f8;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fcf8f8;
+}
+
+.menu .logo {
+    font-family: papyrus;
+    font-size: 24px;
+    font-weight: bold;
+    color:rgb(18, 22, 250);
+}
+
+.content {
+    padding: 200px;
+
+
+}
+
+.btn-salir {
+    background:#32ca14;
+    color: #070707;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 500px;
+    margin-top: 20px;
+
+}
+
+
+@media (max-width: 600px) {
+    header {
+        font-size: 24px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
