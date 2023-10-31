@@ -10,21 +10,9 @@ const APP_ROUTES:Routes=[
     loadChildren: () => import('./estudiante/estudiante.module').then(m => m.EstudianteModule)
   },
   {
-    path: '**',
-    pathMatch: 'full',
-    redirectTo: 'estudiante'
-  },
-
-  {
     path: 'docente',
     loadChildren: () => import('./docente/docente.module').then(m => m.DocenteModule)
   },
-  {
-    path: '**',
-    pathMatch: 'full',
-    redirectTo: 'docente'
-  },
-
   {
     path: 'usuarios',
     loadChildren: () => import('./usuarios/usuarios.module').then(m => m.UsuariosModule)
